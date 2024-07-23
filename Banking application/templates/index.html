@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Operations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    h2 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .operation-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .operation-button.deposit-button {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .operation-button.withdraw-button {
+      background-color: #f44336;
+      color: #fff;
+    }
+
+    .operation-button.open-account-button {
+      background-color: #2196f3;
+      color: #fff;
+    }
+
+    .operation-button.delete-account-button {
+      background-color: #ff9800;
+      color: #fff;
+    }
+    .operation-button.cbbutton {
+      background-color: #1204a6;
+      color: #fff;
+    }
+    .operation-button.dbutton {
+      background-color: #5f5b94;
+      color: #fff;
+    }
+
+    .operation-button.tbutton{
+      background-color: #d85771;
+      color: #fff;    
+    }
+
+    .operation-button:hover {
+      opacity: 0.8;
+    }
+    .whl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+  }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>MAVY - GROUP 16</h1>
+  </div>
+  <h2>Bank Operations</h2>
+  
+  <div class="whl">
+  <!-- Deposit Link -->
+  <a href="/deposit" class="operation-button deposit-button">Deposit</a>
+  
+  <!-- Withdraw Link -->
+  <a href="/withdraw" class="operation-button withdraw-button">Withdraw</a>
+  
+  <!-- Open Account Link -->
+  <a href="/openAccount" class="operation-button open-account-button">Open Account</a>
+  
+  <!-- Delete Account Link -->
+  <a href="/deleteAccount" class="operation-button delete-account-button">Delete Account</a>
+
+  <a href="/checkbalance" class="operation-button cbbutton">Check Balance</a>
+
+  <a href="/Details" class="operation-button dbutton">Details</a>
+
+  <a href="/transfer" class="operation-button tbutton">Transfer Money</a>
+  </div>
+</body>
+</html>

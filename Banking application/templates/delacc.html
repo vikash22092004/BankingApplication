@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Account Form</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+</head>
+<style>/* Applying styles to the Delete Account form */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .DeleteAccount-form {
+      max-width: 400px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+      width: calc(100% - 12px);
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+    </style>
+<body>
+  <h2>Delete Account Form</h2>
+  <form action="/DeleteAccount1" method="post" class="DeleteAccount-form">
+    <div class="form-group">
+      <label for="accno">Account Number:</label>
+      <input type="text" id="accno" name="accno">
+    </div>
+    
+    <div class="form-group">
+      <label for="pin">PIN:</label>
+      <input type="password" id="pin" name="pin">
+    </div>
+    
+    <div class="form-group">
+        <output><p>{{delout}}</p></output>
+      <input type="submit" value="Delete Account">
+    </div>
+
+  </form>
+</body>
+</html>
